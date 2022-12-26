@@ -1,0 +1,86 @@
+.courses-cards{
+    padding: 0 2em;
+    margin-top: 3em;
+}
+
+.courses-card{
+    border: 1px solid black;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+.courses-card:not(:last-child){
+    margin-bottom: 2em;
+}
+
+.courses-card--content{
+    margin-bottom: 2em;
+}
+
+.courses-card--heading{
+    margin-bottom: 0.55em;
+}
+
+.courses-card--btn{
+    border: 1px solid black;
+    padding: 0.55em;
+    color: white;
+}
+
+.courses-card--btn:hover{
+    color: black;
+}
+
+.table-container{
+    padding: 2em;
+}
+
+.table{
+    margin-top: 3em;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table tr td, th{
+    padding: 0.75em;
+}
+
+.table tr:first-of-type{
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
+.table tr:nth-of-type(2n){
+    background-color: rgb(81, 81, 81);
+}
+
+.table tr:nth-of-type(2n+1){
+    background-color: rgb(114, 114, 114);
+}
+
+.stars{
+    width: 35%;
+}
+
+@media (min-width: 1000px){
+    .courses-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .courses-card--content{
+        width: 70%;
+    }
+
+    .courses-card--btn{
+        width: 20%;
+        height: 15%;
+        text-align: center
+    }
+
+    .table-container{
+        padding: 0;
+    }
+}

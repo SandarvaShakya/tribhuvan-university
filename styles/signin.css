@@ -1,0 +1,93 @@
+.heading{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 1.5em;
+}
+
+.signin--content{
+    padding: 0 2em;
+}
+
+.form--container{
+    margin-top: 3em;
+}
+
+.form--element:not(:last-child){
+    margin-bottom: 2em;
+}
+
+.form--element input[type=text],
+.form--element input[type=email],
+.form--element input[type=password]{
+    border: 1px solid black;
+    padding: 1em;
+    width: 100%;
+}
+
+.form--element select{
+    border: 1px solid black;
+    width: 100%;
+    padding: 1em;
+}
+
+.radios{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.radio + .radio{
+    margin-left: 1em;
+}
+
+.terms{
+    text-align: center;
+    font-weight: 600;
+}
+
+.terms input{
+    margin-right: 0.55em;
+}
+
+.form--element label{
+    font-weight: 600;
+}
+
+.form-btn{
+    border: 1px solid black;
+    color: white;
+    padding: 1em;
+    width: 100%;
+}
+
+.form-btn:hover{
+    color: black;
+}
+
+.signin--image{
+    display: none;
+}
+
+@media (min-width: 1000px){
+    .signin--content{
+        padding: 0;
+    }
+
+    .form--container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #form{
+        width: 50%;
+    }
+
+    .signin--image{
+        display: inline-block;
+        width: 40%;
+    }
+}

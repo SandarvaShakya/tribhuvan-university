@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+}
+
+.header{
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.background-img{
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/Tribhunvan-University1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-img img{
+    height: 100%;
+    object-position: 50%;
+}
+
+.overlay{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    opacity: 0.8;
+}
+
+.logo{
+    color: white;
+}
+
+.logo-link{
+    text-decoration: none;
+}
+
+.nav-content{
+    display: flex;
+    width: 100%;
+    padding: 1em 1.5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item{
+    background-color: rgba(165, 163, 163, 0.5);
+    list-style-type: none;
+    padding: 1em;
+}
+
+.nav-item:hover{
+    background-color: rgba(74, 72, 72, 0.8);
+}
+
+.nav-items{
+    overflow: hidden;
+    max-width: 0%;
+    text-align: center;
+    transition: max-width 0.4s ease-in-out;
+    white-space: nowrap;
+}
+
+.nav-items-show{
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.hero-content{
+    margin-top: 5em;
+    text-align: center;
+    animation: animate-content 3s ease-in-out;
+}
+
+.hero-text, .heading{
+    color: #d8d8d8;
+}
+
+.heading{
+    margin-bottom: 0.35em;
+}
+
+.hero-text{
+    margin-bottom: 2em;;
+}
+
+.btn{
+    width: 40%;
+    padding: 1em;
+    background-color: rgba(186, 186, 186, 8%);
+    color: white;
+    border: 1px solid white;
+    font-size: 1em;
+}
+
+.section{
+    padding: 3.5em 0;
+}
+
+.section--heading{
+    text-align: center;
+}
+
+.cards{
+    padding: 5em 2em;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 3em 1.5em;
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 5px 5px rgba(43, 43, 43, 0.2);
+}
+
+.card:nth-child(2n){
+    margin: 3em 0;
+}
+
+.card--heading, .card--content{
+    margin-bottom: 1.75em;
+}
+
+.btn-2{
+    background-color: rgba(43, 43, 43, 1);
+    width: 60%;
+}
+
+.btn-2:hover{
+    background-color: rgba(43, 43, 43, 0.5);
+}
+
+.cards-2{
+    padding: 5em 2em;
+}
+
+.card-2{
+    display: flex;
+    background: linear-gradient(90deg, #919191 0%, rgba(134, 132, 132, 0) 100%);
+    padding: 1em;
+}
+
+.card-2:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-2:not(:last-child){
+    margin-bottom: 3em;
+}
+
+.card--image{
+    width: 50%;
+}
+
+.card--image img{
+    max-width: 100%;
+}
+
+.card2--content{
+    margin-left: 1em;
+}
+
+.username{
+    margin-bottom: 0.55em;
+}
+
+.section--background{
+    background: url('../images/collegestudents.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12em 0;
+    position: relative;
+}
+
+.section--content{
+    position: absolute;
+    top: 50%;
+    padding: 0 2em;
+    color: white;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.section--overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.btn--width{
+    margin-top: 2rem;
+    width: 60%;
+    padding: 0.55em;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer--content{
+    width: 100%;
+    padding: 2em 2em;
+    background-color: rgba(110, 110, 110, 1);
+}
+
+.footer--image{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+
+.footer--overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.footer--image img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.socials{
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.social-icon{
+    padding: 1em;
+}
+
+.social-icon img{
+    max-width: 100%;
+}
+
+.subscribe{
+    margin-top: 1.75em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+
+.subscribe input{
+    padding: 1em;
+}
+
+.btn-3{
+    background-color: rgba(110, 110, 110, 1);
+    border: 1px solid black;
+    color: black;
+}
+
+.arrow-up{
+    width: 8%;
+    transform: rotate(-90deg);
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+
+@media (min-width: 1000px){
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .hero-content{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .btn{
+        width: 30%;
+        font-size: 0.75em;
+    }
+
+    .btn:hover{
+        background-color: rgba(186, 186, 186, 28%);
+    }
+
+    .nav-content{
+        padding: 3em 0;
+    }
+
+    .nav-items{
+        max-width: 100%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .nav-item{
+        background-color: transparent;
+    }
+
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card{
+        width: 30%;
+    }
+
+    .card:nth-child(2n){
+        margin: 0;
+    }
+
+    .btn-2{
+        width: 80%;
+    }
+
+    .cards-2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;;
+        gap: 3em;
+    }
+
+    .card-2{
+        width: 45%;
+    }
+
+    .text{
+        font-size: 0.85em;
+    }
+
+    .card-2:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    .btn--width{
+        margin-top: 2rem;
+        width: 60%;
+        padding: 0.55em;
+    }
+
+    .footer--image{
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+
+    .footer--content{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        padding: 0 4em;
+    }
+
+    .text-content{
+        width: 80%;
+    }
+
+    .text-content input{
+        width: 65%;
+    }
+
+    .btn-3{
+        width: 30%;
+    }
+
+    .socials{
+        width: 15%;
+        flex-direction: column;
+        gap: 0;
+        margin: 0
+    }
+
+    .arrow-up{
+        width: 2%;
+        transform: rotate(-90deg);
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+    }
+}
+
+@keyframes animate-content {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}

@@ -1,0 +1,8 @@
+.notices{
+    padding: 2em;
+    font-weight: 700;
+}
+
+.notices ol li:not(:last-child){
+    margin-bottom: 1em;
+}
